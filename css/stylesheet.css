@@ -322,6 +322,10 @@ body {
   font-weight: bold;
 }
 
+#coming-soon {
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
 
   .navbar ul {
