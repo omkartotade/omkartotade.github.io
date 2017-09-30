@@ -233,6 +233,10 @@ body {
 }
 
 .contact-text p {
+  text-align: justify;
+}
+
+.top-text {
   text-align: center;
 }
 
@@ -260,8 +264,45 @@ body {
 }
 
 #content{
+  background: transparent;
   width: 40em;
   height: 10em;
+}
+
+#name {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#name:focus,
+#name.focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+#email {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#email:focus,
+#email.focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+#content {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#content:focus,
+#content.focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
 }
 
 #send-email-form-table {
