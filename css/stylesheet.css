@@ -4,6 +4,7 @@
 }
 */
 
+
 body {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -216,7 +217,7 @@ body {
   font-weight: bold;
 }
 
-.text-section p {
+.text-section p{
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 1.5%;
@@ -229,6 +230,10 @@ body {
 .main-section-email {
   text-align: center;
   padding-bottom: 1.5%;
+}
+
+.contact-text p {
+  text-align: center;
 }
 
 #email-button {
@@ -252,6 +257,20 @@ body {
   color: #000000;
   border: 1px solid #EC421D;
   font-weight: bold;
+}
+
+#content{
+  width: 40em;
+  height: 10em;
+}
+
+#send-email-form-table {
+  padding-bottom: 1.5%;
+  margin: auto;
+}
+
+#send-email-form-table td {
+    padding-bottom: 2%;
 }
 
 #tcs-img {
@@ -399,6 +418,15 @@ body {
   #email-button {
     width: 40%;
     min-height: 40px;
+  }
+
+  #content {
+    width: 15em;
+    height: 5em;
+  }
+
+  #name, #email {
+    width: 12em;
   }
 
   .contact-text {
