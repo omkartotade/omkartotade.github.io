@@ -1,0 +1,34 @@
+body {
+  font-family: "Oxygen", sans-serif;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  white-space: normal;
+}
+body .container button {
+  display: block;
+  padding: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid #C0392B;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #C0392B;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 5px #616A6B;
+  transition: transform 0.12s ease-in-out, background 0.12s ease-in-out;
+}
+body .container button:active {
+  transform: translateY(2px);
+  background: #922B21;
+}
+body .container p {
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
