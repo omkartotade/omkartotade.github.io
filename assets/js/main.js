@@ -1,12 +1,20 @@
 var n = 1;
-document.getElementById('fun-btn').addEventListener('click', calcFun);
+var btn = document.getElementById('fun-btn');
+btn.addEventListener('click', calcFun);
 function calcFun() {
 	if (n >= 0) {
 		document.getElementById('counter').innerHTML = n++;
-		if (n === 10) {
+		document.getElementById('container').style.transform = "translate("+ randomInt() +"%, " + randomInt() + "%)";
+		if (n === 12) {
 			document.getElementById('fun-text').innerHTML = "That's enough for now!";
 			n = -1;
-			document.getElementById('fun-btn').removeEventListener('click', calcFun);
+			btn.removeEventListener('click', calcFun);
 		}
 	}
+}
+
+function randomInt() {
+	const max = 25;
+	const min = -25;
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }

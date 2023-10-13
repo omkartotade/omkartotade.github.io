@@ -1,7 +1,7 @@
 body {
   font-family: "Oxygen", sans-serif;
 }
-body .container {
+body #container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +9,9 @@ body .container {
   height: 100vh;
   width: 100vw;
   white-space: normal;
+  transition: transform 0.12s ease-in-out;
 }
-body .container button {
+body #container button {
   display: block;
   padding: 2rem;
   font-size: 1.5rem;
@@ -21,13 +22,14 @@ body .container button {
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 5px #616A6B;
-  transition: transform 0.12s ease-in-out, background 0.12s ease-in-out;
+  transition: transform 0.12s ease-in-out, background 0.12s ease-in-out, box-shadow 0.12s ease-in-out;
 }
-body .container button:active {
+body #container button:active {
   transform: translateY(2px);
   background: #922B21;
+  box-shadow: 0 2px 2px #616A6B;
 }
-body .container p {
+body #container p {
   font-size: 1.2rem;
 }
 

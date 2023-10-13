@@ -4,7 +4,7 @@ body {
 	
 	font-family: 'Oxygen', sans-serif;
 	
-	.container {
+	#container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -12,6 +12,7 @@ body {
 		height: 100vh;
 		width: 100vw;
 		white-space: normal;
+		transition: transform 0.12s ease-in-out;
 		
 		button {
 			display: block;
@@ -24,11 +25,12 @@ body {
 			color: #fff;
 			cursor: pointer;
 			box-shadow: 0 $button-displacement $button-displacement #616A6B;
-			transition: transform 0.12s ease-in-out, background 0.12s ease-in-out;
+			transition: transform 0.12s ease-in-out, background 0.12s ease-in-out, box-shadow 0.12s ease-in-out;
 			
 			&:active {
 				transform: translateY(2px);
 				background: #922B21;
+				box-shadow: 0 2px 2px #616A6B;
 			}
 		}
 		
